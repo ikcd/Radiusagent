@@ -12,7 +12,7 @@ struct RadiusApp: App {
 
     var body: some Scene {
         WindowGroup {
-            HomePage()
+            HomePageView()
         }
     }
 }

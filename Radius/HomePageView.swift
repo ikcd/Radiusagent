@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomePage: View {
+struct HomePageView: View {
     
     @State var MainFacilitieOptions : model?
     @State private var selection: String?
@@ -134,6 +134,6 @@ struct HomePage: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HomePage()
+        HomePageView()
     }
 }

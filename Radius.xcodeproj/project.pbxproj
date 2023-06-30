@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1872D66D2A4C029800E1D083 /* RadiusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872D66C2A4C029800E1D083 /* RadiusApp.swift */; };
 		1872D6722A4C029800E1D083 /* Radius.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1872D6702A4C029800E1D083 /* Radius.xcdatamodeld */; };
-		1872D6742A4C029800E1D083 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872D6732A4C029800E1D083 /* HomePage.swift */; };
+		1872D6742A4C029800E1D083 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872D6732A4C029800E1D083 /* HomePageView.swift */; };
 		1872D6762A4C029B00E1D083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1872D6752A4C029B00E1D083 /* Assets.xcassets */; };
 		1872D67A2A4C029B00E1D083 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1872D6792A4C029B00E1D083 /* Preview Assets.xcassets */; };
 		1872D6842A4C029B00E1D083 /* RadiusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872D6832A4C029B00E1D083 /* RadiusTests.swift */; };
@@ -19,6 +19,7 @@
 		1872D6A02A4C044000E1D083 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872D69F2A4C044000E1D083 /* Endpoint.swift */; };
 		1872D6A32A4C0B6100E1D083 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872D6A22A4C0B6100E1D083 /* model.swift */; };
 		1872D6A52A4C0B9600E1D083 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1872D6A42A4C0B9600E1D083 /* Decoder.swift */; };
+		1887DBF32A4EDB1300C1D92C /* homePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887DBF22A4EDB1300C1D92C /* homePageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,7 @@
 		1872D6692A4C029800E1D083 /* Radius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radius.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1872D66C2A4C029800E1D083 /* RadiusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusApp.swift; sourceTree = "<group>"; };
 		1872D6712A4C029800E1D083 /* Radius.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Radius.xcdatamodel; sourceTree = "<group>"; };
-		1872D6732A4C029800E1D083 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		1872D6732A4C029800E1D083 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		1872D6752A4C029B00E1D083 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1872D6772A4C029B00E1D083 /* Radius.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Radius.entitlements; sourceTree = "<group>"; };
 		1872D6792A4C029B00E1D083 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		1872D69F2A4C044000E1D083 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		1872D6A22A4C0B6100E1D083 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		1872D6A42A4C0B9600E1D083 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		1887DBF22A4EDB1300C1D92C /* homePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +107,11 @@
 		1872D66B2A4C029800E1D083 /* Radius */ = {
 			isa = PBXGroup;
 			children = (
+				1887DBF12A4EDAFF00C1D92C /* ViewModel */,
 				1872D6A12A4C0B4D00E1D083 /* Model */,
 				1872D69C2A4C03F800E1D083 /* Network */,
 				1872D66C2A4C029800E1D083 /* RadiusApp.swift */,
-				1872D6732A4C029800E1D083 /* HomePage.swift */,
+				1872D6732A4C029800E1D083 /* HomePageView.swift */,
 				1872D6752A4C029B00E1D083 /* Assets.xcassets */,
 				1872D6772A4C029B00E1D083 /* Radius.entitlements */,
 				1872D6702A4C029800E1D083 /* Radius.xcdatamodeld */,
@@ -158,6 +161,14 @@
 				1872D6A22A4C0B6100E1D083 /* model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1887DBF12A4EDAFF00C1D92C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1887DBF22A4EDB1300C1D92C /* homePageViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +304,8 @@
 				1872D6722A4C029800E1D083 /* Radius.xcdatamodeld in Sources */,
 				1872D66D2A4C029800E1D083 /* RadiusApp.swift in Sources */,
 				1872D69E2A4C040E00E1D083 /* ApiCalls.swift in Sources */,
-				1872D6742A4C029800E1D083 /* HomePage.swift in Sources */,
+				1872D6742A4C029800E1D083 /* HomePageView.swift in Sources */,
+				1887DBF32A4EDB1300C1D92C /* homePageViewModel.swift in Sources */,
 				1872D6A02A4C044000E1D083 /* Endpoint.swift in Sources */,
 				1872D6A32A4C0B6100E1D083 /* model.swift in Sources */,
 				1872D6A52A4C0B9600E1D083 /* Decoder.swift in Sources */,

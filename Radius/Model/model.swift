@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: - Welcome
+// MARK: - Model
 struct model: Codable {
     var facilities: [Facility]
     let exclusions: [[Exclusion]]
